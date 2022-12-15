@@ -1,0 +1,30 @@
+KOCKA
+#include<stdio.h>
+int unos()
+{
+	int pom;
+	printf("unesi stranicu kocke\n");
+	scanf("%d",&pom);
+	return pom;
+}
+int povrsina(int x)
+{
+	int pom;
+	pom=6*x*x;
+	return pom;
+}
+void zapremina(int x)
+{
+	int pom;
+	pom=x*x*x;
+	printf("zapremina je %d\n",pom);
+}
+int main()
+{
+	int a,p;
+	a=unos();
+	p=povrsina(a);
+	printf("povrsina je %6d\n",p);
+	zapremina(a);
+	return 0;
+}

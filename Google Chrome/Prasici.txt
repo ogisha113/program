@@ -1,0 +1,28 @@
+PRASICI
+#include<stdio.h>
+float unos()
+{
+	float pom;
+	printf("unesi koliko je Pera prodao prasadi\n");
+	scanf("%f",&pom);
+	return pom;
+}
+float prasici()
+{
+	int prasici;
+	printf("unesi koliko je prodao\n");
+	scanf("%d",&prasici);
+	float zarada;
+	zarada=2500*prasici;
+	printf("ukupna zarada je %f\n",zarada);
+	return zarada;
+}
+int main()
+{
+	int p;
+	p=prasici();
+	printf("%d",p);
+	return 0;
+} 
+
+

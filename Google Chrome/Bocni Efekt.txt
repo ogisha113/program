@@ -1,0 +1,19 @@
+
+BOCNI EFEKTI
+#include<stdio.h>
+void pravougaonik(float a,float b,float *obim,float *povrsina)
+{
+	*obim=2*(a+b);
+	*povrsina=a*b;
+	return;
+}
+int main()
+{
+	float a,b,obim,povrsina;
+	printf("unesi stranice pravougaonika\n");
+	scanf("%f%f",&a,&b);
+	pravougaonik(a,b,&obim,&povrsina);
+	printf("povrsina pravougaonika je 2%f\n",povrsina);
+	printf("obim je 2%f\n",obim);
+	return 0;
+}

@@ -1,0 +1,26 @@
+PROSTVREDNOSNIP
+#include<stdio.h>
+int nzd(int a,int b)
+{
+	int c;
+	c=b;
+	b=a%b;
+	a=c;
+}
+int nzs(int a,int b)
+{
+	return a*b/nzd(a,b);
+}
+int main()
+{
+	int x,y,t,z;
+	printf("unesi dva broja\n");
+	scanf("%d%d",&x,&y);
+	z=nzd(x,y);
+	t=nzs(x,y);
+	if(z==1||t==x*y)
+	printf("%d i %d su prosti\n",x,y);
+	else 
+	printf("%d i %d nisu prosti, delilac je %d",x,y,z);
+	return 0;
+}

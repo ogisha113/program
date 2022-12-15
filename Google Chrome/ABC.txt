@@ -1,0 +1,44 @@
+ABC
+#include<stdio.h>
+int max(int x,int y)
+{
+	return (x>y)? x:y;
+
+}
+int min(int x,int y)
+{
+	return (x<y)?x:y;
+}
+void UcitajNiz(int a[],int n)
+{
+	int i;
+	printf("unesi elemente niza\n");
+	for(i=0;i<n;i++)
+	scanf("%d",&a[i]);
+}
+void IspisNiza(int a[],int n)
+{
+	int i;
+	printf("ispis niza\n");
+	for(i=0;i<n;i++)
+	printf("[%d]element=%d",i,a[i]);
+}
+int main()
+{
+	int a[100],b[100],c[100],n;
+	do
+	{
+		printf("unesi broj elemena nizova(do 100)\n");
+		scanf("%d",&n);
+	}while(n<1 || n>100);
+	printf("ucitaj niz a\n");
+	UcitajNiz(a,n);
+	printf("ucitaj niz b\n");
+	UcitajNiz(b,n);
+	for(int i=0;i<n;i++)
+	c[i]=max(a[i],b[i]);
+	printf("rezultat niz c\n");
+	IspisNiza(c,n);
+	printf("\n\n");
+	return 0;
+}
